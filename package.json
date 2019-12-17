@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "youtubedownloader",
   "version": "1.0.0",
   "description": "This is a repository that has sample code for my [Medium Article](https://blog.usejournal.com/how-i-made-my-own-youtube-downloader-using-javascript-and-node-js-160b172f6e10)",
   "main": "script.js",
