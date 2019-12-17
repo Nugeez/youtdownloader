@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const ytdl = require('ytdl-core');
 const dotenv = require('dotenv').config();
+const path = require('path');
 
 const app = express();
 
@@ -11,6 +12,8 @@ const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/downloadmp3', (req,res) => {
 	var url = req.query.url;
